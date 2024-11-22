@@ -30,12 +30,9 @@ const AttendantsCard = ({ id, name, lastName, avatar, onDelete }) => {
                         <Card.Img variant="top" src={avatar} alt={`${name} ${lastName}`} />
                         <Card.Body>
                             <Card.Title>{name} {lastName}</Card.Title>
-                            <Button variant="btn btn-outline-light" onClick={() => setshowModal(true)} style={{ marginLeft: '10px' }}>
-                                <FaTrashAlt />
-                            </Button>
-                            <Link to={`/editar/asistente/${id}`}>
-                                <Button variant="btn btn-outline-light" style={{ marginLeft: '10px' }}>
-                                    <RxMagicWand />
+                            <Link>
+                                <Button variant="btn btn-outline-light" onClick={() => setshowModal(true)} style={{ marginLeft: '10px' }}>
+                                    <FaTrashAlt />
                                 </Button>
                             </Link>
                         </Card.Body>
@@ -56,7 +53,7 @@ const AttendantsCard = ({ id, name, lastName, avatar, onDelete }) => {
                     </Modal.Footer>
                 </Modal>
             </Container>
-        </div>
+        </div >
     )
 }
 

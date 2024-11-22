@@ -8,8 +8,7 @@ import { Navigate } from "react-router-dom"
 const CreateEventPage = () => {
 
     const { loggedUser } = useContext(AuthContext)
-
-    if (loggedUser) {
+    if (!loggedUser) {
         return <Navigate to={'/fish'} />
     }
 
