@@ -1,4 +1,3 @@
-import { Container } from "react-bootstrap"
 import EventForm from "../../components/CreateEventForm/CreateEventForm"
 import './CreateEventsPage.css'
 import { useContext } from "react"
@@ -7,10 +6,13 @@ import { Navigate } from "react-router-dom"
 
 
 const CreateEventPage = () => {
+
     const { loggedUser } = useContext(AuthContext)
+
     if (loggedUser) {
         return <Navigate to={'/fish'} />
     }
+
     return (
         <div className="CreateEventPage">
 

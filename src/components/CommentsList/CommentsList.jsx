@@ -4,7 +4,7 @@ import { Row, Form, Button, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import "./commentList.css"
 
-const API_URL = "http://localhost:5005";
+const API_URL = import.meta.env.VITE_APP_API_URL;
 
 const CommentsList = () => {
     const [comments, setComments] = useState([]);

@@ -7,7 +7,7 @@ import Row from 'react-bootstrap/Row';
 import "./AttendantsForm.css"
 import { useParams, useNavigate, Navigate } from "react-router-dom";
 
-const API_URL = "http://localhost:5005"
+const API_URL = import.meta.env.VITE_APP_API_URL
 
 const AttendantsForm = () => {
 

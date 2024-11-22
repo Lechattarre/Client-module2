@@ -7,7 +7,7 @@ import ListGroup from 'react-bootstrap/ListGroup';
 import { motion } from 'framer-motion';
 import "./EventsGlobalFilter.css";
 
-const API_URL = "http://localhost:5005";
+const API_URL = import.meta.env.VITE_APP_API_URL;
 
 const EventsGlobalFilter = () => {
     const [eventFilter, setEventFilter] = useState('');

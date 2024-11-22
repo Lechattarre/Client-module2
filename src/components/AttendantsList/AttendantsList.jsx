@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import AttendantsCard from "../AttendantsCard/AttendantsCard";
 import { Col, Row } from "react-bootstrap";
-const API_URL = "http://localhost:5005";
+const API_URL = import.meta.env.VITE_APP_API_URL;
 
 const AttendantsList = () => {
     const [attendants, setAttendants] = useState([]);

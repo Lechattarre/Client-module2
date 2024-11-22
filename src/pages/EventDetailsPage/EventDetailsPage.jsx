@@ -11,7 +11,7 @@ import { EMPTYHEART, FULLHEART } from "../../consts/image-paths";
 import { useContext } from "react"
 import { AuthContext } from "../../contexts/auth.context";
 import MyPie from "../../components/MyPie/Mypie";
-const API_URL = "http://localhost:5005";
+const API_URL = import.meta.env.VITE_APP_API_URL;
 
 
 const EventDetailsPage = () => {

@@ -28,7 +28,7 @@ const AttendantsCard = ({ id, name, lastName, avatar, onDelete }) => {
                 <>
                     <Card>
                         <Card.Img variant="top" src={avatar} alt={`${name} ${lastName}`} />
-                        {!loggedUser && <Card.Body>
+                        <Card.Body>
                             <Card.Title>{name} {lastName}</Card.Title>
                             <Button variant="btn btn-outline-light" onClick={() => setshowModal(true)} style={{ marginLeft: '10px' }}>
                                 <FaTrashAlt />
@@ -38,7 +38,7 @@ const AttendantsCard = ({ id, name, lastName, avatar, onDelete }) => {
                                     <RxMagicWand />
                                 </Button>
                             </Link>
-                        </Card.Body>}
+                        </Card.Body>
                     </Card>
                 </>
                 <Modal show={showModal} onHide={() => setshowModal(false)} >

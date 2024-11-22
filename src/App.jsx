@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="classname main">
       <Navbar />
-      <AdminLogAlert />
+      {/* <AdminLogAlert /> */}
 
       <AppRoutes />
       <Footer />
