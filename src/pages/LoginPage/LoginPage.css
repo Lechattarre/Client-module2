@@ -1,16 +1,44 @@
-.container .LoginForm {
+.LoginPage {
     display: flex;
-    flex-wrap: wrap;
-    padding: 150px;
+    align-items: center;
     justify-content: center;
-    width: 100%;
+    min-height: 100vh;
+    background-color: #210707;
+    padding: 20px;
+}
+
+.LoginPage .col {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.LoginForm {
+    text-align: center;
     color: white;
 }
 
-.social-buttons button {
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.LoginForm h1 {
+    font-size: 2rem;
+    /* Tamaño de fuente adaptable */
+}
+
+.LoginForm p {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .LoginPage .col {
+        padding: 15px;
+    }
+
+    .LoginForm h1 {
+        font-size: 1.5rem;
+    }
+
+    .LoginForm p {
+        font-size: 0.9rem;
+    }
 }

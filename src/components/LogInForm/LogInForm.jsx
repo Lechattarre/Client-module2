@@ -24,7 +24,7 @@ const LogInForm = () => {
         e.preventDefault();
         if (logInData.email === "Admin@gmail.com" && logInData.password === "contraseña") {
             logInAdmin();
-            alert('logeado')
+
             navigate('/home');
         } else {
             alert('Credenciales incorrectas');
