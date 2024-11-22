@@ -27,7 +27,7 @@ const AttendantsCard = ({ id, name, lastName, avatar, onDelete }) => {
             <Container>
                 <>
                     <Card>
-                        <Card.Img variant="top" src={avatar} alt={`${name} ${lastName}`} />
+
                         <Card.Body>
                             <Card.Title>{name} {lastName}</Card.Title>
                             <Link>
