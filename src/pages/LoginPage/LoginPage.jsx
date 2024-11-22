@@ -3,7 +3,9 @@ import EventsList from "../../components/EventList/EventList"
 import { motion } from "framer-motion"
 import LogInForm from "../../components/LogInForm/LogInForm"
 
-import "./Loginpage.css"
+import "./LoginPage.css"
+
+
 
 const LoginPage = () => {
     return (
