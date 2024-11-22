@@ -2,6 +2,8 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Row, Form, Button, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
+import { LiaDrupal } from "react-icons/lia";
+
 import "./CommentsList.css"
 
 const API_URL = import.meta.env.VITE_APP_API_URL;
@@ -83,7 +85,8 @@ const CommentsList = () => {
                     <Col key={comment.id} xs={12} md={6} lg={4} className="mb-4">
                         <div className="comment-card">
                             <div className="avatar">
-                                <img src="https://static-00.iconduck.com/assets.00/profile-default-icon-1024x1023-4u5mrj2v.png" alt="avatar" />
+
+                                <h1><LiaDrupal /></h1>
                             </div>
                             <div className="comment-content">
                                 <strong>{comment.name}</strong>

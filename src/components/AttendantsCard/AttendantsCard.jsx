@@ -9,6 +9,7 @@ import Modal from 'react-bootstrap/Modal'
 import { useState } from 'react'
 import { useContext } from "react"
 import { AuthContext } from '../../contexts/auth.context'
+import { LiaDrupal } from "react-icons/lia";
 
 
 const AttendantsCard = ({ id, name, lastName, avatar, onDelete }) => {
@@ -27,6 +28,7 @@ const AttendantsCard = ({ id, name, lastName, avatar, onDelete }) => {
             <Container>
                 <>
                     <Card>
+                        <h1><LiaDrupal /></h1>
 
                         <Card.Body>
                             <Card.Title>{name} {lastName}</Card.Title>
