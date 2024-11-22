@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Row, Form, Button, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import "./commentList.css"
+import "./CommentList.css"
 
 const API_URL = import.meta.env.VITE_APP_API_URL;
 
